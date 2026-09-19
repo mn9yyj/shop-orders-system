@@ -1,1 +1,36 @@
-q
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تقديم طلب جديد</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>أهلاً بك في متجرنا</h1>
+        <p>الرجاء تحديد طلبك وسنقوم بتجهيزه لك:</p>
+        
+        <form id="orderForm">
+            <label for="orderType">نوع الطلب:</label>
+            <select id="orderType" required>
+                <option value="">-- اختر من القائمة --</option>
+                <option value="شراء منتج">شراء منتج</option>
+                <option value="طلب تفصيل">طلب تفصيل</option>
+                <option value="صيانة">صيانة</option>
+            </select>
+
+            <label for="orderDetails">تفاصيل الطلب أو الملاحظات:</label>
+            <textarea id="orderDetails" rows="4" placeholder="اكتب ما تحتاجه بالضبط هنا..."></textarea>
+
+            <label for="customerContact">رقم الجوال للتواصل:</label>
+            <input type="text" id="customerContact" placeholder="05XXXXXXXX" required>
+
+            <button type="submit">إرسال الطلب</button>
+        </form>
+    </div>
+
+    <!-- سنقوم بربط الجافاسكريبت هنا لاحقاً -->
+    <!-- <script type="module" src="app.js"></script> -->
+</body>
+</html>
